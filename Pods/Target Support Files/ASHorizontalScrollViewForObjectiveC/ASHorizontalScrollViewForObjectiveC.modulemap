@@ -1,0 +1,6 @@
+framework module ASHorizontalScrollViewForObjectiveC {
+  umbrella header "ASHorizontalScrollViewForObjectiveC-umbrella.h"
+
+  export *
+  module * { export * }
+}

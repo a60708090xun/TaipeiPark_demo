@@ -1,0 +1,6 @@
+framework module Pods_TaipeiPark {
+  umbrella header "Pods-TaipeiPark-umbrella.h"
+
+  export *
+  module * { export * }
+}

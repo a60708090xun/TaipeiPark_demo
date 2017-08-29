@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B96758B1F533A1100A72552 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B96758A1F533A1100A72552 /* default.png */; };
+		7B9675A11F544E1A00A72552 /* ASHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9675A01F544E1A00A72552 /* ASHViewController.m */; };
+		7DD0981F8EA1D9D5AF4EFD56 /* libPods-UI_UITableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79437413A3281EFBF3EB8C94 /* libPods-UI_UITableView.a */; };
+		8AF5268768491238E171CA69 /* libPods-UI_UITableViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 809D846CD3CED95447DF211F /* libPods-UI_UITableViewTests.a */; };
+		95CC7FD8D8E146F722CA88D4 /* Pods_TaipeiPark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144E876C99E9FBB82D62153B /* Pods_TaipeiPark.framework */; };
+		D3016D2B18C3BBAE009E1962 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3016D2A18C3BBAE009E1962 /* Foundation.framework */; };
+		D3016D2D18C3BBAE009E1962 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3016D2C18C3BBAE009E1962 /* CoreGraphics.framework */; };
+		D3016D2F18C3BBAE009E1962 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3016D2E18C3BBAE009E1962 /* UIKit.framework */; };
+		D3016D3518C3BBAE009E1962 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3016D3318C3BBAE009E1962 /* InfoPlist.strings */; };
+		D3016D3718C3BBAE009E1962 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3016D3618C3BBAE009E1962 /* main.m */; };
+		D3016D3B18C3BBAE009E1962 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3016D3A18C3BBAE009E1962 /* AppDelegate.m */; };
+		D3016D3E18C3BBAE009E1962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3016D3C18C3BBAE009E1962 /* Main.storyboard */; };
+		D3016D4318C3BBAE009E1962 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3016D4218C3BBAE009E1962 /* Images.xcassets */; };
+		D3016D4A18C3BBAE009E1962 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3016D4918C3BBAE009E1962 /* XCTest.framework */; };
+		D3016D4B18C3BBAE009E1962 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3016D2A18C3BBAE009E1962 /* Foundation.framework */; };
+		D3016D4C18C3BBAE009E1962 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3016D2E18C3BBAE009E1962 /* UIKit.framework */; };
+		D3016D5418C3BBAE009E1962 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3016D5218C3BBAE009E1962 /* InfoPlist.strings */; };
+		D3016D5618C3BBAE009E1962 /* UI_UITableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3016D5518C3BBAE009E1962 /* UI_UITableViewTests.m */; };
+		D3016D6118C3BC59009E1962 /* MyUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3016D6018C3BC59009E1962 /* MyUITableViewController.m */; };
+		D328327C18C3CAF3006D8750 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D328327B18C3CAF3006D8750 /* DetailViewController.m */; };
+		D328328418C3FA65006D8750 /* MyUITabelViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D328328318C3FA65006D8750 /* MyUITabelViewCell.m */; };
+		D34858AF50B77A0E4ABC723E /* Pods_TaipeiParkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3811C2E878049F89E8C0EE81 /* Pods_TaipeiParkTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3016D4D18C3BBAE009E1962 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3016D1F18C3BBAE009E1962 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3016D2618C3BBAE009E1962;
+			remoteInfo = UI_UITableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		144E876C99E9FBB82D62153B /* Pods_TaipeiPark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaipeiPark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A962BC1A50C2DA316833DB /* Pods-TaipeiPark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaipeiPark.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaipeiPark/Pods-TaipeiPark.release.xcconfig"; sourceTree = "<group>"; };
+		3811C2E878049F89E8C0EE81 /* Pods_TaipeiParkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaipeiParkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ED98E50B79FB63DDC5F2513 /* Pods-TaipeiParkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaipeiParkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaipeiParkTests/Pods-TaipeiParkTests.release.xcconfig"; sourceTree = "<group>"; };
+		6F11803135F335069C82548B /* Pods-UI_UITableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI_UITableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-UI_UITableView/Pods-UI_UITableView.release.xcconfig"; sourceTree = "<group>"; };
+		7758FE681D9158156EA3D56D /* Pods-UI_UITableViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI_UITableViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UI_UITableViewTests/Pods-UI_UITableViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		79437413A3281EFBF3EB8C94 /* libPods-UI_UITableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UI_UITableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B96758A1F533A1100A72552 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		7B96759F1F544E1A00A72552 /* ASHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ASHViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7B9675A01F544E1A00A72552 /* ASHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ASHViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		809D846CD3CED95447DF211F /* libPods-UI_UITableViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UI_UITableViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85ED99AD01DD2BBD5AD325D0 /* Pods-TaipeiParkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaipeiParkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaipeiParkTests/Pods-TaipeiParkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9449CA8AD2BE1474C64C6719 /* Pods-UI_UITableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI_UITableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UI_UITableView/Pods-UI_UITableView.debug.xcconfig"; sourceTree = "<group>"; };
+		9ACBD3131207C6B604FFEAE5 /* Pods-UI_UITableViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI_UITableViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UI_UITableViewTests/Pods-UI_UITableViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C211E108C0906965B389823 /* Pods-TaipeiPark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaipeiPark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaipeiPark/Pods-TaipeiPark.debug.xcconfig"; sourceTree = "<group>"; };
+		D3016D2718C3BBAE009E1962 /* TaipeiPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaipeiPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3016D2A18C3BBAE009E1962 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D3016D2C18C3BBAE009E1962 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D3016D2E18C3BBAE009E1962 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D3016D3218C3BBAE009E1962 /* TaipeiPark-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TaipeiPark-Info.plist"; sourceTree = "<group>"; };
+		D3016D3418C3BBAE009E1962 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3016D3618C3BBAE009E1962 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D3016D3818C3BBAE009E1962 /* TaipeiPark-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TaipeiPark-Prefix.pch"; sourceTree = "<group>"; };
+		D3016D3918C3BBAE009E1962 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D3016D3A18C3BBAE009E1962 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D3016D3D18C3BBAE009E1962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3016D4218C3BBAE009E1962 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D3016D4818C3BBAE009E1962 /* TaipeiParkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaipeiParkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3016D4918C3BBAE009E1962 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D3016D5118C3BBAE009E1962 /* TaipeiParkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TaipeiParkTests-Info.plist"; sourceTree = "<group>"; };
+		D3016D5318C3BBAE009E1962 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3016D5518C3BBAE009E1962 /* UI_UITableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UI_UITableViewTests.m; sourceTree = "<group>"; };
+		D3016D5F18C3BC59009E1962 /* MyUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUITableViewController.h; sourceTree = "<group>"; };
+		D3016D6018C3BC59009E1962 /* MyUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUITableViewController.m; sourceTree = "<group>"; };
+		D328327A18C3CAF3006D8750 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
+		D328327B18C3CAF3006D8750 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D328328218C3FA65006D8750 /* MyUITabelViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUITabelViewCell.h; sourceTree = "<group>"; };
+		D328328318C3FA65006D8750 /* MyUITabelViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUITabelViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3016D2418C3BBAE009E1962 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3016D2D18C3BBAE009E1962 /* CoreGraphics.framework in Frameworks */,
+				D3016D2F18C3BBAE009E1962 /* UIKit.framework in Frameworks */,
+				D3016D2B18C3BBAE009E1962 /* Foundation.framework in Frameworks */,
+				7DD0981F8EA1D9D5AF4EFD56 /* libPods-UI_UITableView.a in Frameworks */,
+				95CC7FD8D8E146F722CA88D4 /* Pods_TaipeiPark.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3016D4518C3BBAE009E1962 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3016D4A18C3BBAE009E1962 /* XCTest.framework in Frameworks */,
+				D3016D4C18C3BBAE009E1962 /* UIKit.framework in Frameworks */,
+				D3016D4B18C3BBAE009E1962 /* Foundation.framework in Frameworks */,
+				8AF5268768491238E171CA69 /* libPods-UI_UITableViewTests.a in Frameworks */,
+				D34858AF50B77A0E4ABC723E /* Pods_TaipeiParkTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10083BD414BAB11FC3E3A302 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9449CA8AD2BE1474C64C6719 /* Pods-UI_UITableView.debug.xcconfig */,
+				6F11803135F335069C82548B /* Pods-UI_UITableView.release.xcconfig */,
+				7758FE681D9158156EA3D56D /* Pods-UI_UITableViewTests.debug.xcconfig */,
+				9ACBD3131207C6B604FFEAE5 /* Pods-UI_UITableViewTests.release.xcconfig */,
+				9C211E108C0906965B389823 /* Pods-TaipeiPark.debug.xcconfig */,
+				23A962BC1A50C2DA316833DB /* Pods-TaipeiPark.release.xcconfig */,
+				85ED99AD01DD2BBD5AD325D0 /* Pods-TaipeiParkTests.debug.xcconfig */,
+				5ED98E50B79FB63DDC5F2513 /* Pods-TaipeiParkTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3016D1E18C3BBAE009E1962 = {
+			isa = PBXGroup;
+			children = (
+				D3016D3018C3BBAE009E1962 /* UI_UITableView */,
+				D3016D4F18C3BBAE009E1962 /* UI_UITableViewTests */,
+				D3016D2918C3BBAE009E1962 /* Frameworks */,
+				D3016D2818C3BBAE009E1962 /* Products */,
+				10083BD414BAB11FC3E3A302 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D3016D2818C3BBAE009E1962 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3016D2718C3BBAE009E1962 /* TaipeiPark.app */,
+				D3016D4818C3BBAE009E1962 /* TaipeiParkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3016D2918C3BBAE009E1962 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3016D2A18C3BBAE009E1962 /* Foundation.framework */,
+				D3016D2C18C3BBAE009E1962 /* CoreGraphics.framework */,
+				D3016D2E18C3BBAE009E1962 /* UIKit.framework */,
+				D3016D4918C3BBAE009E1962 /* XCTest.framework */,
+				79437413A3281EFBF3EB8C94 /* libPods-UI_UITableView.a */,
+				809D846CD3CED95447DF211F /* libPods-UI_UITableViewTests.a */,
+				144E876C99E9FBB82D62153B /* Pods_TaipeiPark.framework */,
+				3811C2E878049F89E8C0EE81 /* Pods_TaipeiParkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3016D3018C3BBAE009E1962 /* UI_UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				7B96758A1F533A1100A72552 /* default.png */,
+				D328327A18C3CAF3006D8750 /* DetailViewController.h */,
+				D328327B18C3CAF3006D8750 /* DetailViewController.m */,
+				7B96759F1F544E1A00A72552 /* ASHViewController.h */,
+				7B9675A01F544E1A00A72552 /* ASHViewController.m */,
+				D3016D3918C3BBAE009E1962 /* AppDelegate.h */,
+				D3016D3A18C3BBAE009E1962 /* AppDelegate.m */,
+				D3016D3C18C3BBAE009E1962 /* Main.storyboard */,
+				D3016D4218C3BBAE009E1962 /* Images.xcassets */,
+				D3016D3118C3BBAE009E1962 /* Supporting Files */,
+				D3016D5F18C3BC59009E1962 /* MyUITableViewController.h */,
+				D3016D6018C3BC59009E1962 /* MyUITableViewController.m */,
+				D328328218C3FA65006D8750 /* MyUITabelViewCell.h */,
+				D328328318C3FA65006D8750 /* MyUITabelViewCell.m */,
+			);
+			path = UI_UITableView;
+			sourceTree = "<group>";
+		};
+		D3016D3118C3BBAE009E1962 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3016D3218C3BBAE009E1962 /* TaipeiPark-Info.plist */,
+				D3016D3318C3BBAE009E1962 /* InfoPlist.strings */,
+				D3016D3618C3BBAE009E1962 /* main.m */,
+				D3016D3818C3BBAE009E1962 /* TaipeiPark-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3016D4F18C3BBAE009E1962 /* UI_UITableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3016D5518C3BBAE009E1962 /* UI_UITableViewTests.m */,
+				D3016D5018C3BBAE009E1962 /* Supporting Files */,
+			);
+			path = UI_UITableViewTests;
+			sourceTree = "<group>";
+		};
+		D3016D5018C3BBAE009E1962 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3016D5118C3BBAE009E1962 /* TaipeiParkTests-Info.plist */,
+				D3016D5218C3BBAE009E1962 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3016D2618C3BBAE009E1962 /* TaipeiPark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3016D5918C3BBAE009E1962 /* Build configuration list for PBXNativeTarget "TaipeiPark" */;
+			buildPhases = (
+				F05160145684F91D96AB798E /* [CP] Check Pods Manifest.lock */,
+				D3016D2318C3BBAE009E1962 /* Sources */,
+				D3016D2418C3BBAE009E1962 /* Frameworks */,
+				D3016D2518C3BBAE009E1962 /* Resources */,
+				3EAD12F1812B22A4D90DE4DE /* [CP] Embed Pods Frameworks */,
+				2B7EF0FCB7AB3BE5DD609A9A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaipeiPark;
+			productName = UI_UITableView;
+			productReference = D3016D2718C3BBAE009E1962 /* TaipeiPark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3016D4718C3BBAE009E1962 /* TaipeiParkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3016D5C18C3BBAE009E1962 /* Build configuration list for PBXNativeTarget "TaipeiParkTests" */;
+			buildPhases = (
+				DAA2DE483787151F56B5C197 /* [CP] Check Pods Manifest.lock */,
+				D3016D4418C3BBAE009E1962 /* Sources */,
+				D3016D4518C3BBAE009E1962 /* Frameworks */,
+				D3016D4618C3BBAE009E1962 /* Resources */,
+				D7CBB899AC9A88A629E8FA9E /* [CP] Embed Pods Frameworks */,
+				A286B2F0E7E4CDDA15E0A96A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3016D4E18C3BBAE009E1962 /* PBXTargetDependency */,
+			);
+			name = TaipeiParkTests;
+			productName = UI_UITableViewTests;
+			productReference = D3016D4818C3BBAE009E1962 /* TaipeiParkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3016D1F18C3BBAE009E1962 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = powenko;
+				TargetAttributes = {
+					D3016D2618C3BBAE009E1962 = {
+						DevelopmentTeam = B6T3WCD59Q;
+						ProvisioningStyle = Automatic;
+					};
+					D3016D4718C3BBAE009E1962 = {
+						TestTargetID = D3016D2618C3BBAE009E1962;
+					};
+				};
+			};
+			buildConfigurationList = D3016D2218C3BBAE009E1962 /* Build configuration list for PBXProject "TaipeiPark" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3016D1E18C3BBAE009E1962;
+			productRefGroup = D3016D2818C3BBAE009E1962 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3016D2618C3BBAE009E1962 /* TaipeiPark */,
+				D3016D4718C3BBAE009E1962 /* TaipeiParkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3016D2518C3BBAE009E1962 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3016D4318C3BBAE009E1962 /* Images.xcassets in Resources */,
+				7B96758B1F533A1100A72552 /* default.png in Resources */,
+				D3016D3518C3BBAE009E1962 /* InfoPlist.strings in Resources */,
+				D3016D3E18C3BBAE009E1962 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3016D4618C3BBAE009E1962 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3016D5418C3BBAE009E1962 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B7EF0FCB7AB3BE5DD609A9A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaipeiPark/Pods-TaipeiPark-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EAD12F1812B22A4D90DE4DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TaipeiPark/Pods-TaipeiPark-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ASHorizontalScrollViewForObjectiveC/ASHorizontalScrollViewForObjectiveC.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ASHorizontalScrollViewForObjectiveC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaipeiPark/Pods-TaipeiPark-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A286B2F0E7E4CDDA15E0A96A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaipeiParkTests/Pods-TaipeiParkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7CBB899AC9A88A629E8FA9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaipeiParkTests/Pods-TaipeiParkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAA2DE483787151F56B5C197 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaipeiParkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F05160145684F91D96AB798E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaipeiPark-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3016D2318C3BBAE009E1962 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3016D3B18C3BBAE009E1962 /* AppDelegate.m in Sources */,
+				D3016D3718C3BBAE009E1962 /* main.m in Sources */,
+				D328328418C3FA65006D8750 /* MyUITabelViewCell.m in Sources */,
+				D3016D6118C3BC59009E1962 /* MyUITableViewController.m in Sources */,
+				D328327C18C3CAF3006D8750 /* DetailViewController.m in Sources */,
+				7B9675A11F544E1A00A72552 /* ASHViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3016D4418C3BBAE009E1962 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3016D5618C3BBAE009E1962 /* UI_UITableViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3016D4E18C3BBAE009E1962 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3016D2618C3BBAE009E1962 /* TaipeiPark */;
+			targetProxy = D3016D4D18C3BBAE009E1962 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3016D3318C3BBAE009E1962 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3016D3418C3BBAE009E1962 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D3016D3C18C3BBAE009E1962 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3016D3D18C3BBAE009E1962 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3016D5218C3BBAE009E1962 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3016D5318C3BBAE009E1962 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3016D5718C3BBAE009E1962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D3016D5818C3BBAE009E1962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3016D5A18C3BBAE009E1962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C211E108C0906965B389823 /* Pods-TaipeiPark.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = B6T3WCD59Q;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UI_UITableView/TaipeiPark-Prefix.pch";
+				INFOPLIST_FILE = "UI_UITableView/TaipeiPark-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcstack.taipeipark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D3016D5B18C3BBAE009E1962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23A962BC1A50C2DA316833DB /* Pods-TaipeiPark.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = B6T3WCD59Q;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UI_UITableView/TaipeiPark-Prefix.pch";
+				INFOPLIST_FILE = "UI_UITableView/TaipeiPark-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcstack.taipeipark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D3016D5D18C3BBAE009E1962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85ED99AD01DD2BBD5AD325D0 /* Pods-TaipeiParkTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UI_UITableView.app/UI_UITableView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UI_UITableView/UI_UITableView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "UI_UITableViewTests/TaipeiParkTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vcstack.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D3016D5E18C3BBAE009E1962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED98E50B79FB63DDC5F2513 /* Pods-TaipeiParkTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UI_UITableView.app/UI_UITableView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UI_UITableView/UI_UITableView-Prefix.pch";
+				INFOPLIST_FILE = "UI_UITableViewTests/TaipeiParkTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vcstack.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3016D2218C3BBAE009E1962 /* Build configuration list for PBXProject "TaipeiPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3016D5718C3BBAE009E1962 /* Debug */,
+				D3016D5818C3BBAE009E1962 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3016D5918C3BBAE009E1962 /* Build configuration list for PBXNativeTarget "TaipeiPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3016D5A18C3BBAE009E1962 /* Debug */,
+				D3016D5B18C3BBAE009E1962 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3016D5C18C3BBAE009E1962 /* Build configuration list for PBXNativeTarget "TaipeiParkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3016D5D18C3BBAE009E1962 /* Debug */,
+				D3016D5E18C3BBAE009E1962 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3016D1F18C3BBAE009E1962 /* Project object */;
+}
