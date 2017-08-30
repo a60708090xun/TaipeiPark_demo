@@ -1,12 +1,13 @@
 # TaipeiPark_demo
 Taipei Park demo for Obj-c
 
-Reference:
+# Reference
+
+Swift 起步走:
 https://www.gitbook.com/book/itisjoe/swiftgo
 
-SDWebImage
+SDWebImage:
 https://github.com/rs/SDWebImage
 
-HorizontalScrollView
+HorizontalScrollView:
 https://github.com/terenceLuffy/AppStoreStyleHorizontalScrollView
-
