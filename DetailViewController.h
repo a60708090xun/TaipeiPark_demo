@@ -19,9 +19,10 @@
 @property (strong, nonatomic) IBOutlet UILabel *mUILabel1;
 @property (strong, nonatomic) IBOutlet UILabel *mUILabel2;
 @property (strong, nonatomic) IBOutlet UILabel *mUILabel3;
-@property (strong, nonatomic) IBOutlet UILabel *mUILabel4;
-@property (strong, nonatomic) IBOutlet UITextView *mUITextView;
+@property (strong, nonatomic) IBOutlet UITextView *mUITextViewIntro;
 @property (strong, nonatomic) IBOutlet UIView *mUIView;
+@property (strong, nonatomic) IBOutlet UIScrollView *mUIScrollView;
+@property (strong, nonatomic) IBOutlet UIView *mContentView;
 @property (strong,nonatomic) NSString* mDetilString;
 @property (strong,nonatomic) NSDictionary* mDetailDict;
 @property (strong,nonatomic) NSArray* mDictArray;

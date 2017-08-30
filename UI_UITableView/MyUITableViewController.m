@@ -23,14 +23,15 @@
     [super viewDidLoad];
     self.title=@"Taipei Park Attractions";
     
-    
+
+#if 0
     mData=[[NSMutableArray alloc] init];
     [mData addObject:@"yahoo.com"];
     [mData addObject:@"google"];
     [mData addObject:@"baidu.com"];
     [mData addObject:@"yam.com"];
-    [mData addObject:@"powenko.com"];
     mResult=mData;
+#endif
     
     // 台北公園景點資料 ID
     NSString *taipeiDataUrl = @"http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=bf073841-c734-49bf-a97f-3757a6013812";
@@ -71,9 +72,10 @@
     NSDictionary *result = [jsonObj objectForKey:@"result"];
     NSArray *resultsArr = [result objectForKey:@"results"];
     
-    mDict = resultsArr;
+    mDict = [self sortByParkName: resultsArr];
     
-#if 0
+    
+#if 1
     self.tableView.estimatedRowHeight = 68.0;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
 #endif
@@ -120,6 +122,12 @@
     t1 = [site objectForKey:@"Name"];
     t2 = [site objectForKey:@"ParkName"];
     t3 = [site objectForKey:@"Introduction"];
+    if ([t3 isEqualToString:@""]) {
+        t3 = [NSString stringWithFormat:@"%@ in %@",
+              [site objectForKey:@"Name"],
+              [site objectForKey:@"ParkName"]];
+    }
+    
     imageStr = [site objectForKey:@"Image"];
     
     cell.mUILabel1.text=t1;
@@ -214,41 +222,71 @@
     }
 }
 
+- (NSArray*)sortByParkName:(NSArray *) inputArr
+{
+    NSSortDescriptor *parkDescriptor = [[NSSortDescriptor alloc] initWithKey:@"ParkName" ascending:YES];
+    NSArray *sortDescriptors = [NSArray arrayWithObject:parkDescriptor];
+    NSArray *sortedArray = [inputArr sortedArrayUsingDescriptors:sortDescriptors];
+
+    return (NSArray *)sortedArray;
+}
+
 - (NSArray*)findRelatedDict:(NSDictionary *) dict
 {
     NSMutableArray *relatedDicts = [[NSMutableArray alloc] init];
     NSString *parkName = [dict objectForKey:@"ParkName"];
+    NSString *_id = [dict valueForKey:@"_id"];
     
+    int dictIndex = (int) [mDict indexOfObject: dict];
+    
+#if 1
+    // data sorted by parkName
     // search backward
     int i=0;
-    NSString *index = [dict valueForKey:@"_id"];
-    int idx = index.intValue - 1;
-    for (i = idx-1; i>=0; i--) {
+    int miss = 0;
+    for (i = dictIndex-1; i>=0; i--) {
         NSDictionary *tmp = [mDict objectAtIndex:i];
-        if ([tmp objectForKey:@"ParkName"] == parkName) {
+        NSString *tmpParkName = [tmp objectForKey:@"ParkName"];
+        NSString *tmpid = [tmp objectForKey:@"_id"];
+        if ([tmpParkName isEqualToString: parkName] && ![tmpid isEqualToString: _id]) {
             [relatedDicts addObject:tmp];
         }
-        else {
+        else if (miss++ > 5) {
             break;
         }
     }
     
     // search forward
-    for (i = idx+1; i<[mDict count]; i++) {
+    miss = 0;
+    for (i = dictIndex+1; i<[mDict count]; i++) {
         NSDictionary *tmp = [mDict objectAtIndex:i];
-        if ([tmp objectForKey:@"ParkName"] == parkName) {
+        NSString *tmpParkName = [tmp objectForKey:@"ParkName"];
+        NSString *tmpid = [tmp objectForKey:@"_id"];
+        if ([tmpParkName isEqualToString: parkName] && ![tmpid isEqualToString: _id]) {
             [relatedDicts addObject:tmp];
         }
-        else {
+        else if (miss++ > 5){
             break;
         }
     }
+#else
+    // data does not in order?
+    for (int i = 0; i<[mDict count]; i++) {
+        NSDictionary *tmp = [mDict objectAtIndex:i];
+        NSString *tmpParkName = [tmp objectForKey:@"ParkName"];
+        NSString *tmpid = [tmp objectForKey:@"_id"];
+        if ([tmpParkName isEqualToString: parkName] && ![tmpid isEqualToString: _id]) {
+            [relatedDicts addObject:tmp];
+        }
+    }
+    
+#endif
     
     return (NSArray *)relatedDicts;
 }
 
  
-
+#if 0
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
     NSString* tstring=self.mUISearchBar1.text;
@@ -260,6 +298,7 @@
     }
     [self.tableView reloadData];
 }
+#endif
 
 
 

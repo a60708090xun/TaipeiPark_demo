@@ -15,10 +15,11 @@
 @end
 
 @implementation DetailViewController
-@synthesize mUILabel1, mUILabel2, mUILabel3, mUILabel4;
-@synthesize mUITextView;
+@synthesize mUILabel1, mUILabel2, mUILabel3;
+@synthesize mUITextViewIntro;
 @synthesize mUIImageView;
 @synthesize mUIView;
+@synthesize mUIScrollView;
 @synthesize mRelatedArray;
 @synthesize slider;
 
@@ -51,8 +52,18 @@
     mUILabel1.text= [self.mDetailDict objectForKey:@"ParkName"];
     mUILabel2.text= [self.mDetailDict objectForKey:@"Name"];
     mUILabel3.text= [NSString stringWithFormat: @"開放時間： %@", [self.mDetailDict objectForKey:@"OpenTime"]];
-    mUILabel4.text= [self.mDetailDict objectForKey:@"Introduction"];
-    //mUITextView.text= [self.mDetailDict objectForKey:@"Introduction"];
+    mUITextViewIntro.text= [self.mDetailDict objectForKey:@"Introduction"];
+    if ([mUITextViewIntro.text isEqualToString:@""]) {
+        mUITextViewIntro.text = [NSString stringWithFormat:@"%@ in %@, it's a magical place.",
+                                 [self.mDetailDict objectForKey:@"Name"],
+                                 [self.mDetailDict objectForKey:@"ParkName"]];
+    }
+    
+    self.mUITextViewIntro.translatesAutoresizingMaskIntoConstraints = true;
+    [self.mUITextViewIntro sizeToFit];
+    mUITextViewIntro.scrollEnabled = false;
+    
+    //NSLog(@"%@ Intro text h=%.1f", mUILabel2.text, mUITextViewIntro.frame.size.height);
 }
 
 - (void)didReceiveMemoryWarning

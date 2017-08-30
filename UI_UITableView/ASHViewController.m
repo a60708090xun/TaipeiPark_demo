@@ -17,7 +17,11 @@
 @implementation ASHViewController
 @synthesize mRelatedDicts;
 
-const float kCellHeight = 60.0f;
+#define CELL_WIDTH  100
+#define CELL_HEIGHT 100
+#define WORD_HEIGHT 20
+
+const float kCellHeight = CELL_HEIGHT;
 
 - (void)viewDidLoad
 {
@@ -75,7 +79,7 @@ const float kCellHeight = 60.0f;
         if (indexPath.row == 0) {
             horizontalScrollView.miniAppearPxOfLastItem = 10;
             //sample code of how to use this scroll view
-            horizontalScrollView.uniformItemSize = CGSizeMake(100, 100);
+            horizontalScrollView.uniformItemSize = CGSizeMake(CELL_WIDTH, CELL_HEIGHT);
             //this must be called after changing any size or margin property of this class to get acurrate margin
             [horizontalScrollView setItemsMarginOnce];
             //create 20 buttons for cell 1
@@ -90,12 +94,13 @@ const float kCellHeight = 60.0f;
 #endif
             for (int i=0; i<[mRelatedDicts count]; i++) {
                 
-                //CGRect imageFrame = CGRectMake(0, 0, 200, 180);
-                //CGRect labelFrame = CGRectMake(0, 180, 200, 20);
+                CGRect viewFrame = CGRectMake(0, 0, CELL_WIDTH, CELL_HEIGHT);
+                CGRect imageFrame = CGRectMake(0, 0, CELL_WIDTH, CELL_HEIGHT-WORD_HEIGHT);
+                CGRect labelFrame = CGRectMake(0, CELL_HEIGHT-WORD_HEIGHT, CELL_WIDTH, WORD_HEIGHT);
                 
-                UIView *view = [[UIView alloc] init];
-                UIImageView *imageview = [[UIImageView alloc] init];
-                UILabel *label = [[UILabel alloc] init];
+                UIView *view = [[UIView alloc] initWithFrame:viewFrame];
+                UIImageView *imageview = [[UIImageView alloc] initWithFrame:imageFrame];
+                UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
                 
                 NSString *imageStr = nil;
                 imageStr = [(NSDictionary*)[mRelatedDicts objectAtIndex:i] valueForKey:@"Image"];
@@ -107,18 +112,18 @@ const float kCellHeight = 60.0f;
                 else {
                     imageview.image = [UIImage imageNamed:@"default.png"];
                 }
-                //imageview.frame = imageFrame;
-                label.textAlignment = NSTextAlignmentLeft;
-                //[view addSubview: imageview];
-                //[view insertSubview: label belowSubview: imageview];
-                //[view addSubview: label];
-                //[buttons addObject:view];
-                //[imageview addSubview: label];
                 
-                [buttons addObject: imageview];
+                //label.backgroundColor = [UIColor purpleColor];;
+                
+                [view addSubview: imageview];
+                [view addSubview: label];
+                [buttons addObject:view];
+                
+                //[buttons addObject:imageview];
             }
             if (0 == [mRelatedDicts count]) {
-                UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
+                CGRect labelFrame = CGRectMake(0, 0, CELL_WIDTH, WORD_HEIGHT);
+                UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
                 label.text = @"None";
                 [buttons addObject:label];
             }

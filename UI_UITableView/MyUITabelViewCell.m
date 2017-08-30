@@ -15,6 +15,9 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
+        self.mUITextView.translatesAutoresizingMaskIntoConstraints = true;
+        [self.mUITextView sizeToFit];
+        self.mUITextView.scrollEnabled = false;
     }
     return self;
 }

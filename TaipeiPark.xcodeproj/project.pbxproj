@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C5E3D332E28D6830198C6EE /* Pods_TaipeiPark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144E876C99E9FBB82D62153B /* Pods_TaipeiPark.framework */; };
 		7B96758B1F533A1100A72552 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B96758A1F533A1100A72552 /* default.png */; };
 		7B9675A11F544E1A00A72552 /* ASHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9675A01F544E1A00A72552 /* ASHViewController.m */; };
-		7DD0981F8EA1D9D5AF4EFD56 /* libPods-UI_UITableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79437413A3281EFBF3EB8C94 /* libPods-UI_UITableView.a */; };
 		8AF5268768491238E171CA69 /* libPods-UI_UITableViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 809D846CD3CED95447DF211F /* libPods-UI_UITableViewTests.a */; };
-		95CC7FD8D8E146F722CA88D4 /* Pods_TaipeiPark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144E876C99E9FBB82D62153B /* Pods_TaipeiPark.framework */; };
-		D3016D2B18C3BBAE009E1962 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3016D2A18C3BBAE009E1962 /* Foundation.framework */; };
 		D3016D2D18C3BBAE009E1962 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3016D2C18C3BBAE009E1962 /* CoreGraphics.framework */; };
 		D3016D2F18C3BBAE009E1962 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3016D2E18C3BBAE009E1962 /* UIKit.framework */; };
 		D3016D3518C3BBAE009E1962 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3016D3318C3BBAE009E1962 /* InfoPlist.strings */; };
@@ -52,6 +50,10 @@
 		7B96758A1F533A1100A72552 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
 		7B96759F1F544E1A00A72552 /* ASHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ASHViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		7B9675A01F544E1A00A72552 /* ASHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ASHViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7B9675A21F5518BD00A72552 /* ASHorizontalScrollViewForObjectiveC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASHorizontalScrollViewForObjectiveC.framework; path = "Build/Products/Debug-iphonesimulator/ASHorizontalScrollViewForObjectiveC/ASHorizontalScrollViewForObjectiveC.framework"; sourceTree = "<group>"; };
+		7B9675A41F5518C100A72552 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "Pods/../build/Debug-iphoneos/SDWebImage.framework"; sourceTree = "<group>"; };
+		7B9675A61F5519D700A72552 /* Pods_TaipeiParkTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TaipeiParkTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_TaipeiParkTests.framework"; sourceTree = "<group>"; };
+		7B9675A81F5519FD00A72552 /* Pods_TaipeiPark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TaipeiPark.framework; path = "Build/Products/Debug-iphonesimulator/Pods_TaipeiPark.framework"; sourceTree = "<group>"; };
 		809D846CD3CED95447DF211F /* libPods-UI_UITableViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UI_UITableViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85ED99AD01DD2BBD5AD325D0 /* Pods-TaipeiParkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaipeiParkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaipeiParkTests/Pods-TaipeiParkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9449CA8AD2BE1474C64C6719 /* Pods-UI_UITableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI_UITableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UI_UITableView/Pods-UI_UITableView.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,9 +91,7 @@
 			files = (
 				D3016D2D18C3BBAE009E1962 /* CoreGraphics.framework in Frameworks */,
 				D3016D2F18C3BBAE009E1962 /* UIKit.framework in Frameworks */,
-				D3016D2B18C3BBAE009E1962 /* Foundation.framework in Frameworks */,
-				7DD0981F8EA1D9D5AF4EFD56 /* libPods-UI_UITableView.a in Frameworks */,
-				95CC7FD8D8E146F722CA88D4 /* Pods_TaipeiPark.framework in Frameworks */,
+				6C5E3D332E28D6830198C6EE /* Pods_TaipeiPark.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +148,10 @@
 		D3016D2918C3BBAE009E1962 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B9675A81F5519FD00A72552 /* Pods_TaipeiPark.framework */,
+				7B9675A61F5519D700A72552 /* Pods_TaipeiParkTests.framework */,
+				7B9675A41F5518C100A72552 /* SDWebImage.framework */,
+				7B9675A21F5518BD00A72552 /* ASHorizontalScrollViewForObjectiveC.framework */,
 				D3016D2A18C3BBAE009E1962 /* Foundation.framework */,
 				D3016D2C18C3BBAE009E1962 /* CoreGraphics.framework */,
 				D3016D2E18C3BBAE009E1962 /* UIKit.framework */,
@@ -566,6 +570,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = B6T3WCD59Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/ASHorizontalScrollViewForObjectiveC",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UI_UITableView/TaipeiPark-Prefix.pch";
 				INFOPLIST_FILE = "UI_UITableView/TaipeiPark-Info.plist";
@@ -586,6 +596,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = B6T3WCD59Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/ASHorizontalScrollViewForObjectiveC",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UI_UITableView/TaipeiPark-Prefix.pch";
 				INFOPLIST_FILE = "UI_UITableView/TaipeiPark-Info.plist";
